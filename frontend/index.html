@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>CodeCoach AI</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- ================= LOGIN PAGE ================= -->
+
+    <section id="loginPage" class="login-page">
+
+        <div class="login-card">
+
+            <div class="logo">
+                CC
+            </div>
+
+            <h1>
+                CodeCoach <span>AI</span>
+            </h1>
+
+            <p class="subtitle">
+                Your personal coding learning companion
+            </p>
+
+
+            <!-- NAME LOGIN -->
+
+            <input
+                type="text"
+                id="nameInput"
+                placeholder="Enter your name"
+                autocomplete="name"
+            >
+
+            <button
+                id="nameLoginButton"
+                class="main-login-button">
+                Enter CodeCoach AI
+            </button>
+
+            <p
+                id="nameLoginMessage"
+                class="login-message"
+                role="status"
+            ></p>
+
+
+            <p class="login-footer">
+                Learn • Debug • Practice • Grow
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= MAIN APPLICATION ================= -->
+
+    <section id="mainApp" class="main-app hidden">
+
+        <header class="navbar">
+
+            <div class="brand">
+                <div class="small-logo">CC</div>
+                <span>CodeCoach <strong>AI</strong></span>
+            </div>
+
+            <div class="user-area">
+                <span id="welcomeUser"></span>
+
+                <button id="logoutButton">
+                    Logout
+                </button>
+            </div>
+
+        </header>
+
+
+        <main class="dashboard">
+
+            <section class="hero">
+
+                <div>
+                    <p class="hero-small">
+                        WELCOME TO CODECOACH AI
+                    </p>
+
+                    <h2>
+                        Learn to code.<br>
+                        <span>Think like a programmer.</span>
+                    </h2>
+
+                    <p>
+                        Practice coding, understand errors,
+                        improve your problem-solving skills,
+                        and learn step by step.
+                    </p>
+                </div>
+
+            </section>
+
+
+            <!-- CODING AREA -->
+
+            <section class="coding-section">
+
+                <div class="section-title">
+                    <h2>Code Practice</h2>
+
+                    <select id="languageSelect">
+                        <option value="python">Python</option>
+                        <option value="c">C</option>
+                        <option value="java">Java</option>
+                        <option value="javascript">JavaScript</option>
+                    </select>
+                </div>
+
+
+                <textarea
+                    id="codeEditor"
+                    placeholder="Paste your code here..."
+                ></textarea>
+
+
+                <button id="analyzeButton" class="analyze-button">
+                    Analyze My Code
+                </button>
+
+
+                <div id="analysisResult" class="analysis-result">
+
+                    <h3>AI Mentor</h3>
+
+                    <p>
+                        Your coding analysis will appear here.
+                    </p>
+
+                </div>
+
+            </section>
+
+
+            <!-- PRACTICE CARDS -->
+
+            <section class="cards">
+
+                <div class="feature-card">
+                    <div class="card-icon">🐞</div>
+                    <h3>Debug</h3>
+                    <p>
+                        Understand what went wrong
+                        and learn how to solve it yourself.
+                    </p>
+                </div>
+
+
+                <div class="feature-card">
+                    <div class="card-icon">🧠</div>
+                    <h3>Practice</h3>
+                    <p>
+                        Improve your programming
+                        and problem-solving skills.
+                    </p>
+                </div>
+
+
+                <div class="feature-card">
+                    <div class="card-icon">🎯</div>
+                    <h3>Challenges</h3>
+                    <p>
+                        Test yourself with coding
+                        challenges and quizzes.
+                    </p>
+                </div>
+
+            </section>
+
+        </main>
+
+    </section>
+
+
+    <script src="app.js"></script>
+
+</body>
+</html>
